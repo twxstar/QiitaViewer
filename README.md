@@ -1,0 +1,6 @@
+# QiitaViewer
+元記事 + WKWebView
+
+参考元:
+AlamofireとSwiftyJSONでAPIを叩くチュートリアル - Qiita
+http://qiita.com/yutat93/items/1b6dfe34fa8537cf3329
