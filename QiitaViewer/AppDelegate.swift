@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navCon: UINavigationController!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let viewCon = ArticleListViewController()
+        
+        navCon = UINavigationController(rootViewController: viewCon)
+        navCon.navigationBar.backgroundColor = UIColor(red: 0, green: 0.4, blue: 0.7, alpha: 0.8)
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        window?.rootViewController = navCon
+        window?.makeKeyAndVisible()
         return true
     }
 
